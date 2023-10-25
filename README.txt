@@ -18,6 +18,8 @@ Questo è un codice JavaScript che utilizza il framework Express.js per creare u
     In altre parole, se qualcuno accede a una pagina diversa da "/" (radice), "/about", o "/contact", il server risponderà inviando il file "404.html" dalla cartella "pubblic". 
     Questo è spesso usato per gestire le pagine di errore.
 
+    app.listen(3000, () => { ... });: Questo è un metodo di Express.js che viene utilizzato per avviare un server web e farlo ascoltare su una porta specifica i questo caso nella porta 3000.
+
 In sintesi, questo codice configura un server Express per servire pagine HTML statiche dalla cartella "pubblic" in risposta alle richieste specifiche per la radice, "/about", e "/contact". 
 Per tutte le altre richieste, restituirà una pagina di errore "404.html". Tuttavia, è importante notare che le route "/about" e "/contact" attualmente non gestiscono correttamente le richieste 
 poiché mancano le istruzioni per inviare una risposta.
